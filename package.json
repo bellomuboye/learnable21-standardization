@@ -4,9 +4,14 @@
   "description": "Submission for Learnable 21 Standardization Test",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node start.js",
+    "dev": "nodemon start.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testRunner": "jest-jasmine2"
   },
   "repository": {
     "type": "git",
@@ -22,9 +27,13 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "jest": "^27.4.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.0",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.4",
+    "jest-jasmine2": "^27.4.4",
+    "supertest": "^6.1.6"
   }
 }
