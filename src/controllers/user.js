@@ -5,7 +5,7 @@ module.exports = class User{
         try {
             const users = await UserService.getAllUsers();
             if(!users) res.status(404).json("There are no users yet!")
-            res.json(users);
+            res.json({status: "Mad child", users});
         } catch (error) {
             res.status(500).json({error: error})
         }

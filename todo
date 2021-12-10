@@ -1,6 +1,8 @@
 Authentication 
-⬜ Register - POST /auth/register
-⬜ Login - POST /auth/login
+✅ Register - POST /auth/register
+✅ Login - POST /auth/login
+✅ Middleware - isAuthenticated
+✅ Middleware - isAdmin
 
 User
 ⬜ Add user - POST /users [ADMIN]

@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 const app = express();
 const port = process.env.PORT;
 
-const routes = require("./src/routes/user")
+const routes = require("./src/routes")
 
 app.use(morgan("dev"));
 app.use(express.json());
